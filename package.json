@@ -14,8 +14,11 @@
   "keywords": [
     "schematics"
   ],
-  "main": "src/nx-config-splitter/index.js",
-  "types": "src/nx-config-splitter/index.d.ts",
+  "main": "src/common/index.js",
+  "types": "src/common/index.d.ts",
+  "files": [
+      "src"
+  ],
   "author": "Elias Dal Ben Arruda",
   "license": "MIT",
   "schematics": "./src/collection.json",
