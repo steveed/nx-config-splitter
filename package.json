@@ -9,19 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eliasdarruda/nx-config-splitter.git"
+    "url": "https://github.com/steveed/nx-config-splitter.git"
   },
   "keywords": [
     "schematics"
   ],
-  "main": "src/commons/index.js",
-  "types": "src/commons/index.d.ts",
+  "main": "src/nx-config-splitter/index.js",
+  "types": "src/nx-config-splitter/index.d.ts",
   "author": "Elias Dal Ben Arruda",
   "license": "MIT",
   "schematics": "./src/collection.json",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "dependencies": {
     "@angular-devkit/core": "^12.2.12",
     "@angular-devkit/schematics": "^12.2.12",
