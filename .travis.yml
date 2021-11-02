@@ -5,7 +5,6 @@ node_js:
 branches:
   only:
     - master
-    - sd-upgrade-angular
 cache:
   directories:
     - node_modules
