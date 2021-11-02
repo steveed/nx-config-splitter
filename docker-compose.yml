@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  splitter:
+    container_name: splitter
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+    - /usr/src/app/node_modules
+    - ./:/usr/src/app
