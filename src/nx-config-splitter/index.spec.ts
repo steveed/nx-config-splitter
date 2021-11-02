@@ -36,14 +36,14 @@ describe('nx-config-splitter', () => {
     console.warn = noop;
   });
 
-  // it('should not see any matches', async () => {
-  //   const runner = new SchematicTestRunner('schematics', collectionPath);
+  it('should not see any matches', async () => {
+    const runner = new SchematicTestRunner('schematics', collectionPath);
 
-  //   testTree.delete('project.config.json');
-  //   runner.runSchematicAsync('merge', {}, testTree).subscribe({
-  //     next: (t) => expect(t).toBeUndefined()
-  //   });
-  // });
+    testTree.delete('project.config.json');
+    runner.runSchematicAsync('merge', {}, testTree).subscribe({
+      next: (t) => expect(t).not.toBeNull(),
+    });
+  });
 
   it('should smoke test original file', async () => {
     const runner = new SchematicTestRunner('schematics', collectionPathOriginal);
